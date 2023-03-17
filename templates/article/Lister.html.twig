@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>Liste des articles</h1>
+<table class="table">
+<tr class="table-danger">
+<th>Identifiant</th>
+<th>Libellé</th>
+<th>Quantité</th>
+<th>Gamme</th>
+</tr>
+{% for article in articles %}
+<tr>
+{% for value in article %}
+<td>{{value}}</td><br>
+{% endfor %}
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,10 @@
+
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>Liste des Gammes informatiques</h1>
+<ul> 
+{% for val in tab %}
+<li>{{ val }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
